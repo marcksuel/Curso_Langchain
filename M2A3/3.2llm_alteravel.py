@@ -6,7 +6,7 @@ def carregar_llm(modelo="mistral"):
     return ChatOllama(model=modelo)
 
 # Leitura do arquivo de prompt
-with open("C:/Users/admin/IntelliJ_Workspace/Curso_LangChain/M2A3/prompts/pergunta_tema", "r") as f:
+with open("prompts/pergunta_tema", "r") as f:
     template = f.read()
 
 # Prompt

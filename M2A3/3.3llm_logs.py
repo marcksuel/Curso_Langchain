@@ -7,7 +7,7 @@ def carregar_llm(modelo="mistral"):
     return ChatOllama(model=modelo)
 
 def log(resposta):
-    with open("logs/interacoes.txt", "a", encoding="utf-8") as log:
+    with open("logs.txt", "a", encoding="utf-8") as log:
         log.write(f"[Resposta]: {resposta}\n")
 
 # Assistente
